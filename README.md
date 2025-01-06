@@ -108,7 +108,9 @@ The results indicate that both undersampling and oversampling improve fraud dete
 
 ## Installation
 
-To run this project, install the necessary libraries:
+## Project Repository
 
-```bash
-pip install pandas scikit-learn matplotlib seaborn
+You can access the full code and resources for this project on my [GitHub repository](https://github.com/Mazenasag/Detecting-Card-Fraud).
+
+Feel free to clone the repository, explore the code, and contribute to the project.
+
