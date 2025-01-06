@@ -68,19 +68,22 @@ The goal was to build a model capable of accurately detecting fraudulent transac
 
 ## Results
 
-Here is a summary of the model performance for different strategies (Imbalanced, Undersampling, and Oversampling):
+# Model Performance Evaluation on Fraud Detection
 
-| **Method**         | **Metric**   | **Score_1** | **Score_2** | **Score_3** | **Recall_1** | **Recall_2** | **Recall_3** |
-|--------------------|--------------|-------------|-------------|-------------|--------------|--------------|--------------|
-| **Imbalanced Classes** | Accuracy    | 0.999256    | 0.999438    | 0.998948    | 0.626374     | 0.736264     | 0.747253     |
-| **Imbalanced Classes** | F1 Score    | 0.735484    | 0.812121    | 0.701031    | 0.626374     | 0.736264     | 0.747253     |
-| **Imbalanced Classes** | Precision   | 0.890625    | 0.905405    | 0.660194    | 0.626374     | 0.736264     | 0.747253     |
-| **Undersampling**      | Accuracy    | 0.947368    | 0.947368    | 0.931579    | 0.911765     | 0.911765     | 0.921569     |
-| **Undersampling**      | F1 Score    | 0.948980    | 0.948980    | 0.935323    | 0.911765     | 0.911765     | 0.921569     |
-| **Undersampling**      | Precision   | 0.989362    | 0.989362    | 0.949495    | 0.911765     | 0.911765     | 0.921569     |
-| **Oversampling**       | Accuracy    | 0.944329    | 0.999927    | 0.998210    | 0.913987     | 1.000000     | 0.998964     |
-| **Oversampling**       | F1 Score    | 0.942553    | 0.999927    | 0.998211    | 0.913987     | 1.000000     | 0.998964     |
-| **Oversampling**       | Precision   | 0.972963    | 0.999855    | 0.997459    | 0.913987     | 1.000000     | 0.998964     |
+The table below shows the evaluation metrics for different models across various resampling strategies.
+
+| ****Model****                | ****Resampling**** | ****Accuracy Score**** | ****F1 Score**** | ****Precision Score**** | ****Recall Score**** |
+|----------------------------|-------------------|------------------------|------------------|-------------------------|----------------------|
+| Logistic Regression         | Imbalanced        | 0.999256               | 0.735484         | 0.890625                | 0.626374             |
+| Random Forest Classifier    | Imbalanced        | 0.999438               | 0.812121         | 0.905405                | 0.736264             |
+| Decision Tree Classifier    | Imbalanced        | 0.998948               | 0.701031         | 0.660194                | 0.747253             |
+| Logistic Regression         | Undersampling     | 0.947368               | 0.948980         | 0.989362                | 0.911765             |
+| Random Forest Classifier    | Undersampling     | 0.947368               | 0.948980         | 0.989362                | 0.911765             |
+| Decision Tree Classifier    | Undersampling     | 0.931579               | 0.935323         | 0.949495                | 0.921569             |
+| Logistic Regression         | Oversampling      | 0.944329               | 0.942553         | 0.972963                | 0.913987             |
+| Random Forest Classifier    | Oversampling      | 0.999927               | 0.999927         | 0.999855                | 1.000000             |
+| Decision Tree Classifier    | Oversampling      | 0.998210               | 0.998211         | 0.997459                | 0.998964             |
+
 
 ### Key Observations:
 - **Imbalanced Classes**: The model performed with a very high accuracy but struggled with detecting fraudulent transactions, as indicated by low recall and F1 score.
