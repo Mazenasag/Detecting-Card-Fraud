@@ -1,6 +1,7 @@
 
 # Card Fraud Detection using (Machine Learning Approach with Regression Models  and Resampling Techniques)
 
+=
 ## Problem Statement
 
 Fraudulent transactions pose a significant threat to financial institutions. The challenge lies in identifying these fraudulent activities amidst a large volume of legitimate transactions. This task becomes more complex due to the highly imbalanced nature of transaction data, where fraudulent transactions are a minority. The goal of this project is to build a machine learning model that can detect fraudulent transactions by addressing class imbalance using resampling techniques.
